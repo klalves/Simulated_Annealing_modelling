@@ -23,6 +23,8 @@ class Simulated_Annealing:
         self.log_fitness = []
         self.log_best_fitness = []
         self.log_temperature = []
+        self.log_sample = []
+        self.log_best_sample = []
 
         self.iteration_count = 0
 
@@ -55,3 +57,5 @@ class Simulated_Annealing:
         self.log_fitness.append(self.current_fitness)
         self.log_best_fitness.append(self.best_fitness)
         self.log_temperature.append(self.temperature)
+        self.log_sample.append(self.current_sample)
+        self.log_best_sample.append(self.best_sample)
